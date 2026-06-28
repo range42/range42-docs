@@ -41,6 +41,7 @@ const sidebars = {
       ],
     },
     'glossary',
+    'contributing',
   ],
 };
 
