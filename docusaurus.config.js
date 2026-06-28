@@ -90,6 +90,10 @@ const config = {
           { title: 'Maintained by', items: [
             { label: 'NC3 Luxembourg', href: 'https://nc3.lu' },
             { label: 'Luxembourg House of Cybersecurity', href: 'https://lhc.lu' },
+            { html: 'Digisquad' },
+          ]},
+          { title: 'Supported by', items: [
+            { html: 'Directorate of Defence' },
           ]},
         ],
         copyright: `Copyright © ${new Date().getFullYear()} NC3 Luxembourg — Range42. GPL-3.0. Built with Docusaurus.`,
