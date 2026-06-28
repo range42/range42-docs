@@ -90,7 +90,7 @@ const config = {
           { title: 'Maintained by', items: [
             { label: 'NC3 Luxembourg', href: 'https://nc3.lu' },
             { label: 'Luxembourg House of Cybersecurity', href: 'https://lhc.lu' },
-            { html: 'Digisquad' },
+            { label: 'Digisquad', href: 'https://www.digisquad.lu' },
           ]},
           { title: 'Supported by', items: [
             { html: 'Directorate of Defence' },
