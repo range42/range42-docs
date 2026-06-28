@@ -1,6 +1,12 @@
 // @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
 
+// ESM-safe: resolve plugin path when require is available (CJS interop), else use bare string
+const searchLocalPlugin =
+  typeof require !== 'undefined'
+    ? require.resolve('@easyops-cn/docusaurus-search-local')
+    : '@easyops-cn/docusaurus-search-local';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Range42 Docs',
@@ -33,6 +39,21 @@ const config = {
         },
         blog: false,
         theme: { customCss: './src/css/custom.css' },
+      }),
+    ],
+  ],
+
+  themes: [
+    [
+      searchLocalPlugin,
+      /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
+      ({
+        hashed: true,
+        language: ['en'],
+        indexDocs: true,
+        indexBlog: false,
+        docsRouteBasePath: '/docs',
+        highlightSearchTermsOnTargetPage: true,
       }),
     ],
   ],
