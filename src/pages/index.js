@@ -1,42 +1,20 @@
-import clsx from 'clsx';
+import React from 'react';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
-import Heading from '@theme/Heading';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
+    <Layout title="Documentation" description="Range42 — Open-Source Cyber Range Platform documentation">
+      <main className={styles.hero}>
+        <h1 className={styles.title}>{siteConfig.title}</h1>
+        <p className={styles.tagline}>{siteConfig.tagline}</p>
+        <div className={styles.buttons}>
+          <Link className="button button--primary button--lg" to="/docs/">Read the docs</Link>
+          <Link className="button button--secondary button--lg" to="https://range42.lu">range42.lu</Link>
+        </div>
       </main>
     </Layout>
   );
