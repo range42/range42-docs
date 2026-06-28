@@ -17,7 +17,7 @@ const config = {
 
   url: 'https://docs.range42.lu',
   baseUrl: '/',
-  trailingSlash: false,
+  trailingSlash: true,
 
   organizationName: 'range42',
   projectName: 'range42-docs',
@@ -36,6 +36,11 @@ const config = {
           sidebarPath: './sidebars.js',
           routeBasePath: 'docs',
           editUrl: 'https://github.com/range42/range42-docs/tree/main/',
+          lastVersion: '0.8',
+          versions: {
+            current: { label: 'Next', path: 'next' },
+            '0.8': { label: '0.8', path: '0.8' },
+          },
         },
         blog: false,
         theme: { customCss: './src/css/custom.css' },
@@ -76,7 +81,7 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          { title: 'Docs', items: [{ label: 'Getting Started', to: '/docs/' }] },
+          { title: 'Docs', items: [{ label: 'Getting Started', to: '/docs/0.8/' }] },
           { title: 'Project', items: [
             { label: 'Website', href: 'https://range42.lu' },
             { label: 'GitHub', href: 'https://github.com/range42/range42' },

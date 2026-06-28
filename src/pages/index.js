@@ -12,7 +12,7 @@ export default function Home() {
         <h1 className={styles.title}>{siteConfig.title}</h1>
         <p className={styles.tagline}>{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link className="button button--primary button--lg" to="/docs/">Read the docs</Link>
+          <Link className="button button--primary button--lg" to="/docs/0.8/">Read the docs</Link>
           <Link className="button button--secondary button--lg" to="https://range42.lu">range42.lu</Link>
         </div>
       </main>
