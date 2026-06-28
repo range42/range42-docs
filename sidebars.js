@@ -21,10 +21,21 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Deployer UI',
+      items: [
+        'deployer-ui/overview',
+        'deployer-ui/node-reference',
+        'deployer-ui/designing-a-topology',
+        'deployer-ui/catalog',
+        'deployer-ui/deploying-and-monitoring',
+        'deployer-ui/settings-and-sources',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Reference',
       items: [
         'reference/range42-cli',
-        'reference/deployer-ui',
         'reference/catalog',
         'reference/playbooks',
         'reference/api',
